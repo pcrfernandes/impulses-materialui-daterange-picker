@@ -1,10 +1,10 @@
 {
-	"name": "materialui-daterange-picker",
-	"version": "1.1.93",
+	"name": "impulses-materialui-daterange-picker",
+	"version": "0.0.1",
 	"description": "A react date range picker implementation using @material-ui.",
 	"author": "jungsoft",
 	"license": "MIT",
-	"repository": "jungsoft/materialui-daterange-picker",
+	"repository": "pcrfernandes/impulses-materialui-daterange-picker",
 	"main": "dist/index.js",
 	"module": "dist/index.es.js",
 	"jsnext:main": "dist/index.es.js",

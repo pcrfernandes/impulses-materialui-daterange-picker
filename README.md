@@ -2,8 +2,8 @@
 
 A react date range picker implementation using @material-ui.
 
-<a href='https://www.npmjs.com/package/materialui-daterange-picker'>
-    <img src='https://img.shields.io/npm/v/materialui-daterange-picker.svg' alt='Latest npm version'>
+<a href='https://www.npmjs.com/package/impulses-materialui-daterange-picker'>
+    <img src='https://img.shields.io/npm/v/impulses-materialui-daterange-picker.svg' alt='Latest npm version'>
 </a>
 
 ## Preview
@@ -17,16 +17,16 @@ Check out the project running [here](https://codesandbox.io/s/materialui-dateran
 ## Usage
 
 ```bash
-npm install materialui-daterange-picker --save
+npm install impulses-materialui-daterange-picker --save
 
 # or with yarn
-yarn add materialui-daterange-picker
+yarn add impulses-materialui-daterange-picker
 ```
 
 ## Basic example
 ```tsx
 import React from "react";
-import { DateRangePicker, DateRange } from "materialui-daterange-picker";
+import { DateRangePicker, DateRange } from "impulses-materialui-daterange-picker";
 
 type Props = {}
 
@@ -77,6 +77,6 @@ Name | Type | Required | Default value | Description
 
 ## Made possible by
 
-<a href="https://github.com/jungsoft/materialui-daterange-picker/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=jungsoft/materialui-daterange-picker" />
+<a href="https://github.com/pcrfernandes/impulses-materialui-daterange-picker/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=pcrfernandes/impulses-materialui-daterange-picker" />
 </a>

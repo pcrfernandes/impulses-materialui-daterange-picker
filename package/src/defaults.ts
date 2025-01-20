@@ -8,6 +8,9 @@ import {
   startOfMonth,
   endOfMonth,
   addMonths,
+  startOfYear,
+  endOfYear,
+  addYears,
 } from 'date-fns';
 
 // eslint-disable-next-line no-unused-vars
@@ -15,39 +18,39 @@ import { DefinedRange } from './types';
 
 const getDefaultRanges = (date: Date): DefinedRange[] => [
   {
-    label: 'Today',
-    startDate: date,
-    endDate: date,
-  },
-  {
-    label: 'Yesterday',
-    startDate: addDays(date, -1),
-    endDate: addDays(date, -1),
-  },
-  {
-    label: 'This Week',
+    label: 'Esta semana',
     startDate: startOfWeek(date),
     endDate: endOfWeek(date),
   },
   {
-    label: 'Last Week',
+    label: 'Semana passada',
     startDate: startOfWeek(addWeeks(date, -1)),
     endDate: endOfWeek(addWeeks(date, -1)),
   },
   {
-    label: 'Last 7 Days',
-    startDate: addWeeks(date, -1),
+    label: 'Últimos 30 dias',
+    startDate: addDays(date, -30),
     endDate: date,
   },
   {
-    label: 'This Month',
+    label: 'Este mês',
     startDate: startOfMonth(date),
     endDate: endOfMonth(date),
   },
   {
-    label: 'Last Month',
+    label: 'Mês passado',
     startDate: startOfMonth(addMonths(date, -1)),
     endDate: endOfMonth(addMonths(date, -1)),
+  },
+  {
+    label: 'Este ano',
+    startDate: startOfYear(date),
+    endDate: endOfYear(date),
+  },
+  {
+    label: 'Ano passado',
+    startDate: startOfYear(addYears(date, -1)),
+    endDate: endOfYear(addYears(date, -1)),
   },
 ];
 
